@@ -29,12 +29,14 @@ mouse while it runs.
 ## Locate something
 
 Find My does not reliably expose sidebar names through accessibility APIs, so
-selection is positional:
+selection is positional. These examples use the `devices` tab; substitute
+`people` or `items` when needed. Replace `POSITION` with the selected sidebar
+entry number:
 
-1. Run `./scripts/fm-list.sh people|devices|items` and inspect its screenshot.
+1. Run `./scripts/fm-list.sh devices` and inspect its screenshot.
 2. Identify the requested entry's position. Do not guess when the screenshot is
    ambiguous.
-3. Run `./scripts/fm-locate.sh POSITION people|devices|items` and inspect the
+3. Run `./scripts/fm-locate.sh POSITION devices` and inspect the
    resulting location screenshot.
 4. Run `./scripts/fm-info.sh` only when the user needs the selected entry's
    details or actions.
